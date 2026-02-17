@@ -55,10 +55,9 @@ alternatively, you can use the executable:
 ## How to Use
 1.  **Load Puzzle**:
     * Click **"Load File"** to upload a `.txt` file representing the grid.
-    * (Bonus) Click **"Upload Image"** to upload a screenshot of the puzzle.
+    * Click **"Upload Image"** to upload a screenshot of the puzzle.
 2.  **Solve**: Click the **"Solve"** button.
 3.  **Save**:
-    * Enter a filename (e.g., `solution1`).
     * Click **"Save Image"** to generate a visual solution in the `test/` folder.
     * Click **"Save Txt"** to generate a text solution in the `test/` folder.
 
