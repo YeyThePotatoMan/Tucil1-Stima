@@ -133,7 +133,7 @@ func main() {
 
 	a := app.New()
 	w := a.NewWindow("Tucil 1")
-	w.Resize(fyne.NewSize(800, 600))
+	w.Resize(fyne.NewSize(1200, 600))
 
 	grid = container.New(layout.NewGridLayout(1))
 	lblTime = widget.NewLabel("Time: 0ms")
@@ -156,6 +156,7 @@ func main() {
 		}, w)
 	})
 
+	lblSlider := widget.NewLabel("Update speed slider (ms): ")
 	slider := widget.NewSlider(1, 500)
 	slider.SetValue(50)
 	slider.OnChanged = func(v float64) { delay = int(v) }
@@ -170,7 +171,9 @@ func main() {
 	sidepanel := container.NewVBox(
 		btnLoad,
 		btn1, btn2, btn3,
+		lblSlider,
 		slider,
+		layout.NewSpacer(),
 		lblStatus, lblTime, lblIter,
 	)
 
