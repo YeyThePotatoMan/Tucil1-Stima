@@ -358,7 +358,7 @@ func main() {
 	fmt.Println("working")
 	n = 0
 	found = false
-	queen, _ = fyne.LoadResourceFromPath("../assets/queen.png")
+	queen = resourceQueenPng
 
 	a := app.New()
 	w := a.NewWindow("Tucil 1")
